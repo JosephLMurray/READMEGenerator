@@ -6,7 +6,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  license !== 'None' ? `\n (https://opensource.org/licenses/${license})` : ''
+  license !== 'None' ? `\n [Link](https://opensource.org/licenses/${license}) \n` : ''
 }
 
 // TODO: Create a function that returns the license section of README
@@ -40,23 +40,26 @@ function generateMarkdown({title, github, email, description, image, license, in
   
   ${usage}
   
-  
-      ![alt text](assets/images/${screenshot})
+  ![alt text](assets/images/${image})
+ 
+  ## Tests
 
-  
+  ${tests}   
+
   ## Credits
   
   ${collab}
   
   ${assets}
+
+  ## Author
+
+  GitHub: [Link](github.com/${github})
+  Email: [Link](${email})
    
-  ## License
-
-
-  
-  ## Features
-  
-  If your project has a lot of features, list them here.
+  ${renderLicenseSection(license)}
+  ${renderLicenseBadge(license)}
+  ${renderLicenseLink(license)}
   
   ## How to Contribute
   
