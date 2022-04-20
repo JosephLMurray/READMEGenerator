@@ -31,14 +31,8 @@ const generateMarkDown = (title, description, install, screenshot, collab, asset
     ${assets}
      
     ## License
-    
-    ${license}
-    
-    ## Badges
-    
-    ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-    
-    [shields.io](https://shields.io/). 
+
+  
     
     ## Features
     
