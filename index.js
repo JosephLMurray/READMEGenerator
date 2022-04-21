@@ -20,9 +20,9 @@ inquirer
       name: 'email',
     },
     {
-        type: 'input',
-        message: 'Write a short description of your project',
-        name: 'description',
+      type: 'input',
+      message: 'Write a short description of your project:',
+      name: 'description',
     },
     {
       type: 'input',
