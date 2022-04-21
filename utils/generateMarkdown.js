@@ -1,12 +1,12 @@
 // a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-const renderLicenseBadge = license => {
-  return license !== 'None' ? `![License](https://img.shields.io/badge/License-${license}-blue.svg)` : ``
+const renderLicenseBadge = (license, spaceLicense) => {
+  return license !== 'None' ? `![License](https://img.shields.io/badge/License-${spaceLicense}-blue.svg)` : ``
 }
 // a function that returns the license link
 // If there is no license, return an empty string
-const renderLicenseLink = license => {
-  return license !== 'None' ? `\n [https://opensource.org/licenses/${license}](https://opensource.org/licenses/${license}) \n` : ``
+const renderLicenseLink = (license, dashLicense) => {
+  return license !== 'None' ? `\n [https://opensource.org/licenses/${license}](https://opensource.org/licenses/${dashLicense}) \n` : ``
 }
 
 // a function that returns the license section of README
@@ -19,7 +19,8 @@ const renderLicenseSection = license => {
 
 // a function to generate markdown for README
 const generateMarkdown = ({title, github, email, description, image, license, install, tests, usage, collab}) => {
-  license = license.replace(' ', '');
+  const shortLicense = license.replace(' ', '%20');
+  const dashLicense = license.replace(' ', '-');
   return `# ${title}
 
   ## Description
@@ -59,8 +60,8 @@ const generateMarkdown = ({title, github, email, description, image, license, in
    
   ${renderLicenseSection(license)}
   
-  ${renderLicenseBadge(license)}
-  ${renderLicenseLink(license)}
+  ${renderLicenseBadge(license, shortLicense)}
+  ${renderLicenseLink(license, dashLicense)}
 
 `;
 }
