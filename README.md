@@ -34,6 +34,7 @@
   ## License
   
   This product is licensed under GPL 3.0
+  
   ![License](https://img.shields.io/badge/License-GPL3.0-blue.svg)
   
  [https://opensource.org/licenses/GPL3.0](https://opensource.org/licenses/GPL3.0) 
