@@ -19,7 +19,7 @@
   
   Open the program by running 'node index.js' in the terminal.
   
-  ![Demo](assets/images/demo.png)
+  ![Demo](assets/images/demo.gif)
  
   ## Tests
 
@@ -33,7 +33,7 @@
    
   ## License
   
-  This product is licensed under GPL3.0
+  This product is licensed under GPL 3.0
   ![License](https://img.shields.io/badge/License-GPL3.0-blue.svg)
   
  [https://opensource.org/licenses/GPL3.0](https://opensource.org/licenses/GPL3.0) 
