@@ -58,6 +58,7 @@ const generateMarkdown = ({title, github, email, description, image, license, in
   Email: [${email}](${email})
    
   ${renderLicenseSection(license)}
+  
   ${renderLicenseBadge(license)}
   ${renderLicenseLink(license)}
 
